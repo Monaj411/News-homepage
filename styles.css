@@ -3,15 +3,31 @@
 
 
  @media screen and (max-width: 375px) { 
-   
+
+body {
+    font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
+
+}    
+
+main {
+      display: flex;
+      flex-direction: column;
+}
+/* Image */   
 .bright-img {
     width: 375px;
+    height: unset;
     object-fit: cover;
+    margin-right: 20px;
+    margin-top: 30px;
+
 }
 
 .article-future {
     width: 375px;
     background-color: hsl(36, 100%, 99%);
+    margin-left: 20px;
+
 
  } 
 
@@ -20,7 +36,8 @@
  }
 
  .bright-text {
-    font-size: 19px;
+    font-size: 400;
+
  }
 
  .btn {
@@ -31,7 +48,152 @@
     font-weight: bold;
     color: antiquewhite;
     letter-spacing: 0.5em;
-    border-color: 0px solid transparent;
+    border-color:  hsl(36, 100%, 99%);
  }
 
+
+.article-new {
+    background-color: hsl(240, 100%, 5%) ;
+    width: 375px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
 }
+
+hr {
+    color: white;
+    height: 1px;
+    width: 350px;
+}
+
+
+h3 {
+    color: hsl(35, 77%, 62%);
+    font-size: 25px;
+    margin-left: 10px;
+    padding-top: 20px;
+    
+}
+
+h4 {
+    color: hsl(36, 100%, 99%);
+    margin-left: 10px;
+
+}
+
+.new-text {
+    color: hsl(36, 100%, 99%);
+    margin-left: 10px;
+    font-size: small;
+
+}
+
+.horizontal-line {
+    border-top: 1px solid hsl(236, 13%, 42%);
+    
+}
+
+}
+
+
+/* Desktop version   
+
+
+body {
+    font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
+
+}   
+
+main {
+    display: flex;
+}
+
+.article-future {
+    width: 1440px;
+    background-color: hsl(36, 100%, 99%);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 0px;
+    padding-right: 1px;
+
+ } 
+
+ /* Image */   
+/* .bright-img {
+    width: 900px;
+    height: 35%;
+    object-fit: cover;
+}
+
+.bright-div {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    white-space: nowrap;
+    display: inline;
+    margin-top: 5px;
+ }
+
+ .bright-text {
+    font-size: 400;
+    
+
+
+
+ }
+
+ .btn {
+    background-color: hsl(5, 85%, 63%);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: antiquewhite;
+    letter-spacing: 0.5em;
+    border-color:  hsl(36, 100%, 99%);
+    align-content: flex-end;
+ } 
+ 
+ 
+
+
+ /* .flex-box {
+    display: flex;
+ }
+
+ .text-flex {
+    align-content: end;
+    margin-left: 300px;
+ } */
+ 
+   
+/*.article-new {
+    background-color: hsl(240, 100%, 5%) ;
+    height: 500px;
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
+}
+
+
+
+/*  <article class="article-future">
+                <img class="bright-img" src="/images/image-web-3-mobile.jpg" alt="bright-future image">
+
+                    <section class="flex-box"> 
+                        <h1> The Bright <br> Future of Web <br> 3.0?</h1>
+                       <span class="text-flex">
+                           <p class="bright-text"> We dive into the next evolution of the web  that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? </p>
+                           <button class="btn"> READ MORE </button>
+                       </span>
+
+                    </section>
+            </article> 
