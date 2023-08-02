@@ -135,7 +135,12 @@ main {
       display: flex;
       flex-direction: column;
 }
-/* Image */   
+/* Image */  
+
+.desktop-image {
+    background-image: url(/images/image-web-3-mobile.jpg);
+
+}
 .bright-img {
     width: 375px;
     height: unset;
@@ -145,12 +150,9 @@ main {
 }
 
 .article-future {
-    width: 375px;
     background-color: hsl(36, 100%, 99%);
     margin-left: 20px;
     margin-top: 20px;
-    background-image: url(/images/image-web-3-mobile.jpg);
-
 
  } 
 
