@@ -18,6 +18,7 @@ main {
     margin-left: 50px;
     margin-right: 0px;
     padding-right: 1px;
+    background-image: url(/images/image-web-3-desktop.jpg);
    
 
  } 
@@ -148,6 +149,7 @@ main {
     background-color: hsl(36, 100%, 99%);
     margin-left: 20px;
     margin-top: 20px;
+    background-image: url(/images/image-web-3-mobile.jpg);
 
 
  } 
