@@ -1,121 +1,4 @@
-/* Desktop version   */
 
-
-body {
-    font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
-
-}   
-
-main {
-    display: flex;
-}
-
-.article-future {
-    width: 1440px;
-    height: 440px;
-    background-color: hsl(36, 100%, 99%); 
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 0px;
-    padding-right: 1px;
-    background-image: url(/images/image-web-3-desktop.jpg);
-   
-
- } 
-
- /* Image */   
-.bright-img {
-    width: 900px;
-    height: 250px;
-    object-fit: cover;
-}
-
-.bright-div {
-    display: inline-block;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: 800;
-    white-space: nowrap;
-    display: inline;
-    margin-top: 5px;
- }
-
- .bright-text {
-    font-size: 400;
-    
-
-
-
- }
-
- .btn {
-    background-color: hsl(5, 85%, 63%);
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: antiquewhite;
-    letter-spacing: 0.5em;
-    border-color:  hsl(36, 100%, 99%);
-    align-content: flex-end;
-    margin-top: 55px;
- } 
- 
- 
-
-
- .flex-box {
-    display: flex;
-    background-color: hsl(36, 100%, 99%);
-
-  
- }
-
- .text-flex {
-    align-content: end;
-    margin-left: 300px;
- } 
-   
-.article-new {
-    background-color: hsl(240, 100%, 5%);
-    height: 440px;
-    margin-left: 0px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-    
-
-}
-
-
-
-h3 {
-    color: hsl(35, 77%, 62%);
-    font-size: 25px;
-    margin-left: 10px;
-    padding-top: 20px;
-    
-}
-
-h4 {
-    color: hsl(36, 100%, 99%);
-    margin-left: 10px;
-
-}
-
-.new-text {
-    color: hsl(36, 100%, 99%);
-    margin-left: 10px;
-    font-size: small;
-
-}
-
-.horizontal-line {
-    border-top: 1px solid hsl(236, 13%, 42%);
-}
 
 
 
@@ -137,10 +20,7 @@ main {
 }
 /* Image */  
 
-.desktop-image {
-    background-image: url(/images/image-web-3-mobile.jpg);
 
-}
 .bright-img {
     width: 375px;
     height: unset;
@@ -156,24 +36,37 @@ main {
 
  } 
 
+ h1 {
+    font-size: 47px;
+    width: 304px;
+    line-height: 36px;
+    margin-bottom: 10px;
+
+
+
+}
+
  h2 {
     font-size: 15px;
  }
 
  .bright-text {
-    font-size: 400;
-
+    font-size: 14px;
+    line-height: 1.2;
+    width: 278px;
+  
+    
  }
 
  .btn {
     background-color: hsl(5, 85%, 63%);
-    width: 200px;
+    width: 135px;
     height: 40px;
-    text-align: center;
     font-weight: bold;
     color: antiquewhite;
-    letter-spacing: 0.5em;
+    letter-spacing: 3px;
     border-color:  hsl(36, 100%, 99%);
+    cursor: pointer;s
  }
 
 
@@ -181,7 +74,7 @@ main {
     background-color: hsl(240, 100%, 5%) ;
     width: 375px;
     height: 380px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -222,6 +115,7 @@ h4 {
 .flex-box {
     display: flex;
     flex-direction: column;
+    width: 375px;
  }
 
  .text-flex {
