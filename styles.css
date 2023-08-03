@@ -1,91 +1,61 @@
-/* Desktop version   */
-
 
 body {
     font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
 
 }   
 
+
+
+
+/* layout */
+
 .flex-container {
     display: flex;
 }
 
 .page-header {
-    width: 1440px;
-    height: 440px;
     background-color: hsl(36, 100%, 99%); 
-    margin-top: 50px;
+    height: 440px;
     margin-left: 50px;
     margin-right: 0px;
+    margin-top: 50px;
     padding-right: 1px;
-   
+    width: 1440px;
 
  } 
 
- /* Image */   
-.header-img {
-    width: 900px;
-    height: 250px;
-    object-fit: cover;
-}
-
-h1 {
-    font-size: 40px;
-    font-weight: 800;
-    display: inline;
-    margin-top: 5px;
- }
-
- .header-caption {
-    font-size: 400;
-
- }
-
- .btn {
-    background-color: hsl(5, 85%, 63%);
-    width: 200px;
-    height: 40px;
-    text-align: center;
-    font-weight: bold;
-    color: antiquewhite;
-    letter-spacing: 0.5em;
-    border-color:  hsl(36, 100%, 99%);
-    align-content: flex-end;
-    margin-top: 55px;
-    cursor: pointer;
-
- } 
- 
- 
-
-
- .page-header__wrapper {
-    display: flex;
-    background-color: hsl(36, 100%, 99%);
-
-  
- }
-
- .page-header__description {
-    align-content: end;
-    margin-left: 300px;
- } 
-   
-.sidebar {
+ .sidebar {
     background-color: hsl(240, 100%, 5%);
     height: 440px;
     margin-left: 0px;
-    margin-top: 50px;
     margin-left: 50px;
-    margin-right: 50px;
-    
-    
+    margin-right: 50px;    
+    margin-top: 50px;
 
 }
 
 
+ /* Image */  
 
-h3 {
+.header-img {
+    height: 250px;
+    object-fit: cover;
+    width: 900px;
+}
+
+
+/* typography */
+
+h1 {
+    display: inline;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 5px;
+
+ }
+
+
+ h3 {
     color: hsl(35, 77%, 62%);
     font-size: 25px;
     margin-left: 10px;
@@ -99,10 +69,26 @@ h4 {
 
 }
 
-.sidebar-caption {
+ .header-caption {
+    font-size: 400;
+
+ }
+
+
+ .page-header__description {
+    align-content: end;
+    margin-left: 300px;
+ } 
+
+ .page-header__wrapper {
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+ }
+
+ .sidebar-caption {
     color: hsl(36, 100%, 99%);
-    margin-left: 10px;
     font-size: small;
+    margin-left: 10px;
 
 }
 
@@ -111,7 +97,23 @@ h4 {
 }
 
 
+ /* button */
 
+ .btn {
+    align-content: flex-end;
+    background-color: hsl(5, 85%, 63%);
+    border-color:  hsl(36, 100%, 99%);
+    color: antiquewhite;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 0.5em;
+    margin-top: 55px;
+    text-align: center;
+    width: 200px;
+
+ } 
+ 
 
 
 /* media query for mobile */
@@ -124,39 +126,52 @@ body {
 
 }    
 
+
+/* layout */
+
 .flex-container {
       display: flex;
       flex-direction: column;
 }
+
+.page-header{
+    background-color: hsl(36, 100%, 99%);
+    margin-left: 20px;
+    margin-top: 20px;} 
+
+.sidebar {
+    background-color: hsl(240, 100%, 5%);
+    height: 380px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 238px;
+    width: 375px;
+    }
+    
 
 
 /* Image */  
 
 
 .header-img {
-    width: 375px;
     height: unset;
-    object-fit: cover;
     margin-right: 20px;
+    object-fit: cover;
+    width: 375px;
 
 }
 
-.page-header{
-    background-color: hsl(36, 100%, 99%);
-    margin-left: 20px;
-    margin-top: 20px;
 
- } 
+/* Typography */
 
- h1 {
+h1 {
     font-size: 47px;
-    width: 304px;
     line-height: 36px;
     margin-bottom: 10px;
-
-
-
+    width: 304px;
 }
+
 
  h2 {
     font-size: 15px;
@@ -165,37 +180,10 @@ body {
  .header-caption {
     font-size: 14px;
     line-height: 1.2;
-    width: 278px;
-  
-    
+    width: 278px;    
  }
 
- .btn {
-    background-color: hsl(5, 85%, 63%);
-    width: 135px;
-    height: 40px;
-    font-weight: bold;
-    color: antiquewhite;
-    letter-spacing: 3px;
-    border-color:  hsl(36, 100%, 99%);
-    cursor: pointer;
-    margin-top: 10px;
- }
-
-
-.sidebar {
-    background-color: hsl(240, 100%, 5%);
-    width: 375px;
-    height: 380px;
-    margin-top: 238px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-h3 {
+ h3 {
     color: hsl(35, 77%, 62%);
     font-size: 25px;
     margin-left: 10px;
@@ -211,14 +199,12 @@ h4 {
 
 .sidebar-caption {
     color: hsl(36, 100%, 99%);
-    margin-left: 10px;
     font-size: small;
-
+    margin-left: 10px;
 }
 
 .sidebar__news-items {
     border-top: 1px solid hsl(236, 13%, 42%);
-
     
 }
 
@@ -233,28 +219,22 @@ h4 {
     margin-left: 0px;
  } 
 
+ 
+
+/* Button */
+
+ .btn {
+    background-color: hsl(5, 85%, 63%);
+    border-color:  hsl(36, 100%, 99%);
+    color: antiquewhite;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    width: 135px;
+ }
+
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/*  <article class="article-future">
-                <img class="bright-img" src="/images/image-web-3-mobile.jpg" alt="bright-future image">
-
-                    <section class="flex-box"> 
-                        <h1> The Bright <br> Future of Web <br> 3.0?</h1>
-                       <span class="text-flex">
-                           <p class="bright-text"> We dive into the next evolution of the web  that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? </p>
-                           <button class="btn"> READ MORE </button>
-                       </span>
-
-                    </section>
-            </article> 
