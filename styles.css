@@ -6,11 +6,11 @@ body {
 
 }   
 
-main {
+.flex-container {
     display: flex;
 }
 
-.article-future {
+.page-header {
     width: 1440px;
     height: 440px;
     background-color: hsl(36, 100%, 99%); 
@@ -23,14 +23,10 @@ main {
  } 
 
  /* Image */   
-.bright-img {
+.header-img {
     width: 900px;
     height: 250px;
     object-fit: cover;
-}
-
-.bright-div {
-    display: inline-block;
 }
 
 h1 {
@@ -40,7 +36,7 @@ h1 {
     margin-top: 5px;
  }
 
- .bright-text {
+ .header-caption {
     font-size: 400;
 
  }
@@ -63,19 +59,19 @@ h1 {
  
 
 
- .flex-box {
+ .page-header__wrapper {
     display: flex;
     background-color: hsl(36, 100%, 99%);
 
   
  }
 
- .text-flex {
+ .page-header__description {
     align-content: end;
     margin-left: 300px;
  } 
    
-.article-new {
+.sidebar {
     background-color: hsl(240, 100%, 5%);
     height: 440px;
     margin-left: 0px;
@@ -103,14 +99,14 @@ h4 {
 
 }
 
-.new-text {
+.sidebar-caption {
     color: hsl(36, 100%, 99%);
     margin-left: 10px;
     font-size: small;
 
 }
 
-.horizontal-line {
+.sidebar__news-items {
     border-top: 1px solid hsl(236, 13%, 42%);
 }
 
@@ -128,7 +124,7 @@ body {
 
 }    
 
-main {
+.flex-container {
       display: flex;
       flex-direction: column;
 }
@@ -137,7 +133,7 @@ main {
 /* Image */  
 
 
-.bright-img {
+.header-img {
     width: 375px;
     height: unset;
     object-fit: cover;
@@ -145,7 +141,7 @@ main {
 
 }
 
-.article-future {
+.page-header{
     background-color: hsl(36, 100%, 99%);
     margin-left: 20px;
     margin-top: 20px;
@@ -166,7 +162,7 @@ main {
     font-size: 15px;
  }
 
- .bright-text {
+ .header-caption {
     font-size: 14px;
     line-height: 1.2;
     width: 278px;
@@ -187,7 +183,7 @@ main {
  }
 
 
-.article-new {
+.sidebar {
     background-color: hsl(240, 100%, 5%);
     width: 375px;
     height: 380px;
@@ -213,26 +209,26 @@ h4 {
 
 }
 
-.new-text {
+.sidebar-caption {
     color: hsl(36, 100%, 99%);
     margin-left: 10px;
     font-size: small;
 
 }
 
-.horizontal-line {
+.sidebar__news-items {
     border-top: 1px solid hsl(236, 13%, 42%);
 
     
 }
 
-.flex-box {
+.page-header__wrapper {
     display: flex;
     flex-direction: column;
     width: 375px;
  }
 
- .text-flex {
+ .page-header__description {
     align-content: start;
     margin-left: 0px;
  } 
