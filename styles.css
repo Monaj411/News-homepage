@@ -1,145 +1,173 @@
-
+/* Basic Style */
 body {
-    font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
+  font-family: Inter;
+  src: url(https://fonts.google.com/specimen/Inter);
+}
 
-}   
+footer {
+  border: 1px solid lime;
+  margin: 20px;
+}
 
+.container {
+  width: 100%;
+  border: 1px solid lightsalmon;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  height: 50px;
+  padding: 50px;
+}
 
+.header__logo {
+  width: 100px;
+}
+
+/* List */
+.list {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  list-style: none;
+  padding-left: 0px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Links */
+.list__item a {
+  text-decoration: none;
+  color: #999;
+}
+
+.list__item a:hover {
+  color: hsl(5, 85%, 63%);
+}
 
 /* layout */
 
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
 .page-header {
-    background-color: hsl(36, 100%, 99%); 
-    height: 440px;
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-top: 50px;
-    padding-right: 1px;
-    width: 1440px;
-
- } 
-
- .sidebar {
-    background-color: hsl(240, 100%, 5%);
-    height: 440px;
-    margin-left: 0px;
-    margin-left: 50px;
-    margin-right: 50px;    
-    margin-top: 50px;
-
+  background-color: hsl(36, 100%, 99%);
+  height: 440px;
+  margin-left: 50px;
+  margin-right: 0px;
+  margin-top: 50px;
+  padding-right: 1px;
+  width: 1440px;
 }
 
+.sidebar {
+  background-color: hsl(240, 100%, 5%);
+  height: 440px;
+  margin-left: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
 
- /* Image */  
+/* Image */
 
 .header-img {
-    height: 250px;
-    object-fit: cover;
-    width: 900px;
+  height: 250px;
+  object-fit: cover;
+  width: 900px;
 }
-
 
 /* typography */
 
 h1 {
-    display: inline;
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 5px;
+  /* You have defined a specific rule for all the h1,h2,h3 with the code below */
+  /* Imagin I also have these elements in my own tasks what will I do with your styles?*/
+  display: inline;
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 5px;
+}
 
- }
-
-
- h3 {
-    color: hsl(35, 77%, 62%);
-    font-size: 25px;
-    margin-left: 10px;
-    padding-top: 20px;
-    
+h3 {
+  color: hsl(35, 77%, 62%);
+  font-size: 25px;
+  margin-left: 10px;
+  padding-top: 20px;
 }
 
 h4 {
-    color: hsl(36, 100%, 99%);
-    margin-left: 10px;
-
+  color: hsl(36, 100%, 99%);
+  margin-left: 10px;
 }
 
- .header-caption {
-    font-size: 400;
+.header-caption {
+  font-size: 400;
+}
 
- }
+.page-header__description {
+  align-content: end;
+  margin-left: 300px;
+}
 
+.page-header__wrapper {
+  background-color: hsl(36, 100%, 99%);
+  display: flex;
+}
 
- .page-header__description {
-    align-content: end;
-    margin-left: 300px;
- } 
-
- .page-header__wrapper {
-    background-color: hsl(36, 100%, 99%);
-    display: flex;
- }
-
- .sidebar-caption {
-    color: hsl(36, 100%, 99%);
-    font-size: small;
-    margin-left: 10px;
-
+.sidebar-caption {
+  color: hsl(36, 100%, 99%);
+  font-size: small;
+  margin-left: 10px;
 }
 
 .sidebar__news-items {
-    border-top: 1px solid hsl(236, 13%, 42%);
+  border-top: 1px solid hsl(236, 13%, 42%);
 }
 
+/* button */
 
- /* button */
-
- .btn {
-    align-content: flex-end;
-    background-color: hsl(5, 85%, 63%);
-    border-color:  hsl(36, 100%, 99%);
-    color: antiquewhite;
-    cursor: pointer;
-    font-weight: bold;
-    height: 40px;
-    letter-spacing: 0.5em;
-    margin-top: 55px;
-    text-align: center;
-    width: 200px;
-
- } 
- 
-
+.btn {
+  align-content: flex-end;
+  background-color: hsl(5, 85%, 63%);
+  border-color: hsl(36, 100%, 99%);
+  color: antiquewhite;
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  letter-spacing: 0.5em;
+  margin-top: 55px;
+  text-align: center;
+  width: 200px;
+}
 
 /* media query for mobile */
 
+@media screen and (max-width: 375px) {
+  body {
+    font-family: Inter;
+    src: url(https://fonts.google.com/specimen/Inter);
+  }
 
- @media screen and (max-width: 375px) { 
+  /* layout */
 
-body {
-    font-family: Inter; src: url(https://fonts.google.com/specimen/Inter);
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-}    
-
-
-/* layout */
-
-.flex-container {
-      display: flex;
-      flex-direction: column;
-}
-
-.page-header{
+  .page-header {
     background-color: hsl(36, 100%, 99%);
     margin-left: 20px;
-    margin-top: 20px;} 
+    margin-top: 20px;
+  }
 
-.sidebar {
+  .sidebar {
     background-color: hsl(240, 100%, 5%);
     height: 380px;
     margin-bottom: 20px;
@@ -147,85 +175,74 @@ body {
     margin-right: 20px;
     margin-top: 238px;
     width: 375px;
-    }
-    
+  }
 
+  /* Image */
 
-/* Image */  
-
-
-.header-img {
+  .header-img {
     height: unset;
     margin-right: 20px;
     object-fit: cover;
     width: 375px;
+  }
 
-}
+  /* Typography */
 
-
-/* Typography */
-
-h1 {
+  h1 {
     font-size: 47px;
     line-height: 36px;
     margin-bottom: 10px;
     width: 304px;
-}
+  }
 
-
- h2 {
+  h2 {
     font-size: 15px;
- }
+  }
 
- .header-caption {
+  .header-caption {
     font-size: 14px;
     line-height: 1.2;
-    width: 278px;    
- }
+    width: 278px;
+  }
 
- h3 {
+  h3 {
     color: hsl(35, 77%, 62%);
     font-size: 25px;
     margin-left: 10px;
     padding-top: 20px;
-    
-}
+  }
 
-h4 {
+  h4 {
     color: hsl(36, 100%, 99%);
     margin-left: 10px;
+  }
 
-}
-
-.sidebar-caption {
+  .sidebar-caption {
     color: hsl(36, 100%, 99%);
     font-size: small;
     margin-left: 10px;
-}
+  }
 
-.sidebar__news-items {
+  .sidebar__news-items {
     border-top: 1px solid hsl(236, 13%, 42%);
-    
-}
+  }
 
-.page-header__wrapper {
+  .page-header__wrapper {
     display: flex;
     flex-direction: column;
     width: 375px;
- }
+  }
 
- .page-header__description {
+  .page-header__description {
     align-content: start;
     margin-left: 0px;
- } 
+  }
 
- 
+  /* Button */
 
-/* Button */
-
- .btn {
+  .btn {
     background-color: hsl(5, 85%, 63%);
-    border-color:  hsl(36, 100%, 99%);
+    border-color: hsl(36, 100%, 99%);
     color: antiquewhite;
     cursor: pointer;
     font-weight: bold;
@@ -233,8 +250,5 @@ h4 {
     letter-spacing: 3px;
     margin-top: 10px;
     width: 135px;
- }
-
-
+  }
 }
-
