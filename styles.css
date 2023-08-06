@@ -89,18 +89,27 @@ footer {
 
 /* Image */
 
+.header-image__wrapper {
+    background-image: url(/images/image-web-3-desktop.jpg);
+    height: 200px;
+    width: 988px;
+    object-fit: cover;
+}
+/* 
 .header-img {
   height: 250px;
   object-fit: cover;
   width: 900px;
   grid-column: 1 / 3;
-}
+} */
 
 /* typography */
 
 h1 {
   /* You have defined a specific rule for all the h1,h2,h3 with the code below */
   /* Imagin I also have these elements in my own tasks what will I do with your styles?*/
+   /* Exactly what I was saying last week when I raised this isssue and your response was that I should always look for styles and be sure you havent used it before, now I think we can now have that converstaion  */
+
   display: inline;
   font-size: 40px;
   font-weight: 800;
@@ -169,12 +178,13 @@ h4 {
   }
 
   /* layout */
-
-  .flex-container {
-    /* display: flex; */
+  .container {
+    display: flex;
     flex-direction: column;
   }
 
+
+ 
   .page-header {
     background-color: hsl(36, 100%, 99%);
     margin-left: 20px;
