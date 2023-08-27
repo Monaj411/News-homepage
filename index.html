@@ -4,36 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="/index.js"></script>
+
 
     <title>Document</title>
   </head>
   <body>
-<div class="container">
-  <nav class="navbar">  
-    <header class="header">
-    <img class="header__logo" src="./images/logo.svg" alt="" />
-    <div>
-      <ul class="list list--inline">
-        <li class="list__item">
-          <a aria-current="page" href="#">Home</a>
-        </li>
-        <li class="list__item">
-          <a href="#">New</a>
-        </li>
-        <li class="list__item">
-          <a href="#">Popular</a>
-        </li>
-        <li class="list__item">
-          <a href="#">Trending</a>
-        </li>
-        <li class="list__item">
-          <a href="#">Categories</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-</nav>
+    <nav class="navbar nav--expanded">
+      <header class="nav__header">
+        <img 
+        class="navbar__logo" 
+        src="/images/logo.svg" 
+        alt="" />
+        <div class="nav__inline">
+          <ul class="list list--inline">
+            <li class="list__item">
+              <a aria-current="page" href="#">Home</a>
+            </li>
+            <li class="list__item">
+              <a href="#">New</a>
+            </li>
+            <li class="list__item">
+              <a href="#">Popular</a>
+            </li>
+            <li class="list__item">
+              <a href="#">Trending</a>
+            </li>
+            <li class="list__item">
+              <a href="#">Categories</a>
+            </li>
+          </ul>
+        </div>
+        <img class="nav__hamburger" src="/images/icon menu.svg"/>
+      </header>
+      <div class="nav__block">
+        <img
+        class="nav__close"
+        src="/images/icon menu close.svg"
+        alt=""
+      />
+        <ul class="list">
+          <li class="list__item">
+            <a aria-current="page" href="#">Home</a>
+          </li>
+          <li class="list__item">
+            <a href="#">New</a>
+          </li>
+          <li class="list__item">
+            <a href="#">Popular</a>
+          </li>
+          <li class="list__item">
+            <a href="#">Trending</a>
+          </li>
+          <li class="list__item">
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
         <!--end of page-header -->
+
+<div class="container">
   <main>
      <div class="header-image__wrapper"></div>
   <div class="header-caption__wrapper">
@@ -49,7 +81,7 @@
   </div>
   </main>
         <!--end of main  -->
-       <aside class="sidebar">
+<aside class="sidebar">
     <h3 class="sidebar-header">New</h3>
     <h4>Hydrogen VS Electric Cars</h4>
     <p class="sidebar-caption">
@@ -69,7 +101,7 @@
         that means.
       </p>
     </div>
-  </aside>
+</aside> 
   <!--end of sidebar  -->
 
     <footer>
