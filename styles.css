@@ -83,12 +83,11 @@ span {
 }
 
 
-
 .header {
   display: flex;
   justify-content: space-between;
   height: 50px;
-  padding: 25px;
+    padding: 25px;
   grid-column: 1 / 4;
 }  
 
@@ -115,7 +114,6 @@ footer {
   grid-column: 1 / 4; 
   justify-content: space-between;
   margin-top: 50px;
-
 }
 
 .footer-card {
@@ -202,6 +200,7 @@ h4 {
   margin-top: 0px;
   font-size: 24px;
   color: rgba(161, 148, 148, 0.5);
+  padding-top: 0px;
 }
 .footer-caption__header {
   font-size: medium;
@@ -225,6 +224,7 @@ h4 {
  margin-top: 55px;
  text-align: center;
  width: 200px; 
+ border: none;
 } 
 
  
@@ -255,7 +255,7 @@ h4 {
   display: none;
 }
 
-.nav__block {
+.collapsible__content {
   max-height: 0;
   overflow: hidden;
 }
@@ -299,7 +299,7 @@ h4 {
     display: none;
   }
 
-  .nav__block {
+  .collapsible__content {
     background-color: #fff;
     border-radius: 10px;
     right: 0px;
@@ -310,15 +310,15 @@ h4 {
     text-align: left;
     top: 5px;
     transition: all 0.3s;
-    width: 170px;
-    height: 200px;
+    width: 240px;
+    height: 620px;
   }
 
-  .nav__block:hover {
+  /* .nav__block:hover {
     visibility: hidden;
     transition: all 0.3s;
 
-  }
+  }  */
 
 
   .list {
@@ -331,6 +331,7 @@ h4 {
   .list .list__item {
     list-style: none;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
 
   /* Links */
@@ -363,19 +364,17 @@ h4 {
     cursor: pointer;
    }
   
-   
-  
   .footer-caption__header:hover {
     color:  hsl(5, 85%, 63%);
     cursor: pointer;
   } 
  
-  .nav--expanded .nav__close {
+  .collapsible--expanded .nav__close {
     display: flex;
     float: right;
   }
 
- .nav--expanded .nav__block {
+ .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;
   } 
@@ -411,7 +410,6 @@ h4 {
 
   }
 
-  
 
   .header-text {
     font-size: 40px;
@@ -426,7 +424,7 @@ h4 {
   }
 
   .btn {
-    align-content: flex-end;
+  align-content: flex-end;
    background-color: hsl(5, 85%, 63%);
    border-color: hsl(36, 100%, 99%);
    color: antiquewhite;
@@ -437,6 +435,8 @@ h4 {
    margin-top: 5px;
    text-align: center;
    width: 160px; 
+   border: none;
+
   } 
 
 
@@ -525,6 +525,7 @@ footer {
   cursor: pointer;
 }
 
-}
 
-  
+
+
+}
